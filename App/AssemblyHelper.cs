@@ -16,7 +16,7 @@ namespace App
             if (implementingTypes.Count() == 0)
                 throw new Exception($"No type found in assembly {assembly.FullName} that implements {iFace.Name}.");
 
-            if (implementingTypes.Count() == 0)
+            if (implementingTypes.Count() > 1)
                 throw new Exception($"More than one tpye ({string.Join(",", implementingTypes)}) found in assembly {assembly.FullName} that implements {iFace.Name}.");
 
             return implementingTypes.First();
