@@ -1,0 +1,13 @@
+Create solution
+Create a command line project called app
+Create a dll project called Fauna
+ - add a class called FaunaInfo implementing the ISpeciesInfo interface
+ Create a dll project called Flora
+ - add a class called FloraInfo implementing the ISpeciesInfo interface
+Create a dll project called PublicContract
+ - add an interface called ISpeciesInfo
+ - in the App, Flora and Fauna projects, add a reference to the Contract project
+Add DI framework
+ - use Nuget manager to add Castle.Windsor to all projects (even to the Contract project)
+   (if targeting .Net Framework 4.0, use CW version 3.4.0)
+
